@@ -10,16 +10,10 @@ import {
   DocumentMagnifyingGlassIcon,
   ArrowsPointingInIcon,
 } from '@heroicons/react/24/outline';
-import Prism from 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/components/prism-markup';
 import prettier from 'prettier/standalone';
 import htmlParser from 'prettier/parser-html';
-
-// Ensure Prism is loaded
-if (typeof window !== 'undefined') {
-  require('prismjs');
-}
 
 // Simple HTML minification function
 const minifyHTML = (html: string): string => {

@@ -28,7 +28,6 @@ export function SqlTools() {
     try {
       const formatted = format(input, {
         language: 'sql',
-        uppercase: true,
         linesBetweenQueries: 2,
       });
       setOutput(formatted);
@@ -45,7 +44,6 @@ export function SqlTools() {
       // Remove extra whitespace and format on a single line
       const minified = format(input, {
         language: 'sql',
-        uppercase: true,
         linesBetweenQueries: 0,
         indentStyle: 'standard'
       }).replace(/\s+/g, ' ').trim();
