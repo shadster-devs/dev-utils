@@ -1,14 +1,7 @@
 "use client";
 
-import { Metadata } from 'next';
 import { TimestampTools } from '@/components/timestamp/TimestampTools';
 import { BackButton } from '@/components/common/BackButton';
-
-export const metadata: Metadata = {
-  title: 'Unix Timestamp Converter - Developer Utils',
-  description: 'Convert between Unix timestamps and human-readable dates. Free online timestamp converter with UTC and local time support.',
-  keywords: 'unix timestamp converter, epoch converter, timestamp to date, date to timestamp',
-};
 
 export default function TimestampPage() {
   return (

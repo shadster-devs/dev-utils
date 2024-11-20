@@ -1,14 +1,8 @@
 "use client";
 
-import { Metadata } from 'next';
 import { DiffTools } from '@/components/diff/DiffTools';
 import { BackButton } from '@/components/common/BackButton';
 
-export const metadata: Metadata = {
-  title: 'Text and Code Diff Tool - Developer Utils',
-  description: 'Compare text, JSON, and HTML with highlighted differences. Free online diff tool with syntax highlighting.',
-  keywords: 'diff tool, text comparison, code comparison, json diff, html diff',
-};
 
 export default function DiffPage() {
   return (

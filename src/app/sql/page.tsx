@@ -1,12 +1,5 @@
-import { Metadata } from 'next';
 import { SqlTools } from '@/components/sql/SqlTools';
 import { BackButton } from '@/components/common/BackButton';
-
-export const metadata: Metadata = {
-  title: 'SQL Formatter and Validator - Developer Utils',
-  description: 'Format and validate SQL queries with syntax highlighting. Free online SQL beautifier and minifier.',
-  keywords: 'sql formatter, sql validator, sql beautifier, sql minifier, sql tools',
-};
 
 export default function SqlPage() {
   return (
