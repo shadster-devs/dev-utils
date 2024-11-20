@@ -1,5 +1,5 @@
 "use client";
-import { Base64Tools } from '@/components/encoding/Base64Tools';
+import { Base64Tools } from '@/components/base64/Base64Tools';
 
 export default function Base64Page() {
   return (

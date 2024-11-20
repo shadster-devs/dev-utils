@@ -1,10 +1,11 @@
+import { ClockIcon, DiffIcon, FileJson, DatabaseIcon } from 'lucide-react';
 import Link from 'next/link';
 
 interface UtilityCard {
   title: string;
   description: string;
   href: string;
-  icon: string;
+  icon: React.JSX.Element;
 }
 
 const utilities: UtilityCard[] = [
@@ -12,7 +13,7 @@ const utilities: UtilityCard[] = [
     title: 'JSON Tools',
     description: 'Format, validate, escape/unescape, and minify JSON',
     href: '/json',
-    icon: '{ }',
+    icon: <FileJson/>,
   },
   // {
   //   title: 'HTML Tools',
@@ -24,13 +25,25 @@ const utilities: UtilityCard[] = [
     title: 'Base64',
     description: 'Encode and decode Base64 strings',
     href: '/base64',
-    icon: '64'
+    icon: <>64</>
   },
   {
     title: 'Unix Timestamp',
     description: 'Convert between Unix timestamps and human-readable dates',
     href: '/timestamp',
-    icon: '⏰'
+    icon: <ClockIcon />
+  },
+  {
+    title: 'Diff Tools',
+    description: 'Compare text, JSON, and HTML with highlighted differences',
+    href: '/diff',
+    icon: <DiffIcon/>
+  },
+  {
+    title: 'SQL Tools',
+    description: 'Format and validate SQL queries with syntax highlighting',
+    href: '/sql',
+    icon: <DatabaseIcon/>
   }
 ];
 

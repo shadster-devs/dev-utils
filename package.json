@@ -11,14 +11,19 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "@types/diff": "^6.0.0",
     "@types/prismjs": "^1.26.5",
+    "diff": "^7.0.0",
     "html-minifier-terser": "^7.2.0",
+    "lucide-react": "^0.460.0",
     "next": "15.0.3",
     "prettier": "^3.3.3",
     "prismjs": "^1.29.0",
     "react": "19.0.0-rc-66855b96-20241106",
+    "react-diff-viewer": "^3.1.1",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "react-json-view": "^1.21.3"
+    "react-json-view": "^1.21.3",
+    "sql-formatter": "^15.4.6"
   },
   "devDependencies": {
     "@types/node": "^20",

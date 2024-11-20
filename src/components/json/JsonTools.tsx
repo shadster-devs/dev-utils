@@ -126,6 +126,34 @@ export function JsonTools() {
 
   return (
     <div className="flex flex-col h-[calc(100vh-6rem)]">
+
+
+<div className="mt-1">
+        <Tab.Group>
+          <Tab.List className="flex mb-5 rounded-xl bg-gray-200 dark:bg-gray-800 p-1">
+            {actions.map((action) => (
+              <Tab
+                key={action.name}
+                className={({ selected }) =>
+                  classNames(
+                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
+                    'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                    'flex items-center justify-center space-x-2',
+                    selected
+                      ? 'bg-white dark:bg-gray-700 text-blue-700 dark:text-white shadow'
+                      : 'text-gray-700 dark:text-gray-400 hover:bg-white/[0.12] hover:text-blue-700 dark:hover:text-white'
+                  )
+                }
+                onClick={action.action}
+              >
+                <action.icon className="h-5 w-5" />
+                <span>{action.name}</span>
+              </Tab>
+            ))}
+          </Tab.List>
+        </Tab.Group>
+      </div>
+      
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-4 min-h-0">
         <div className="flex flex-col min-h-0">
           <label htmlFor="input" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -200,31 +228,6 @@ export function JsonTools() {
         </div>
       </div>
 
-      <div className="mt-4">
-        <Tab.Group>
-          <Tab.List className="flex space-x-2 rounded-xl bg-gray-200 dark:bg-gray-800 p-1">
-            {actions.map((action) => (
-              <Tab
-                key={action.name}
-                className={({ selected }) =>
-                  classNames(
-                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-                    'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-                    'flex items-center justify-center space-x-2',
-                    selected
-                      ? 'bg-white dark:bg-gray-700 text-blue-700 dark:text-white shadow'
-                      : 'text-gray-700 dark:text-gray-400 hover:bg-white/[0.12] hover:text-blue-700 dark:hover:text-white'
-                  )
-                }
-                onClick={action.action}
-              >
-                <action.icon className="h-5 w-5" />
-                <span>{action.name}</span>
-              </Tab>
-            ))}
-          </Tab.List>
-        </Tab.Group>
-      </div>
     </div>
   );
 }
