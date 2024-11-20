@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   description: 'A collection of free developer tools including JSON formatter, SQL formatter, Base64 encoder/decoder, Unix timestamp converter, and more.',
   keywords: 'developer tools, json formatter, sql formatter, base64 encoder, timestamp converter, diff tool',
   authors: [{ name: 'Developer Utils' }],
+  icons: {
+    icon: '/icon',
+    apple: '/apple-icon',
+  },
   openGraph: {
     title: 'Developer Utils - Simple, Fast, and Free Developer Tools',
     description: 'A collection of free developer tools including JSON formatter, SQL formatter, Base64 encoder/decoder, Unix timestamp converter, and more.',
